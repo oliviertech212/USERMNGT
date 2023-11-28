@@ -1,0 +1,32 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar {
+    transition: width 0.3s;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e2e8f0;
+    overflow-y: auto;
+  }
+  
+  .sidebar-minimized {
+    width: 100px;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Adjust this margin according to your design */
+    transition: margin-left 0.3s;
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust this width according to your design */
+  }
+  
+  .main-content-minimized {
+    margin-left: 100px;
+    width: calc(100% - 100px);
+  }
